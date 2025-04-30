@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chili</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/chili-con-carne-gd8h-1200.webp" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>chili</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>500 g de viande de bœuf hachée</li>
+         <li>1 oignon émincé</li> 
+        <li>2 gousses d'ail hachées</li> 
+        <li>1 poivron rouge coupé en dés</li>
+         <li>400 g de tomates pelées en boîte</li>
+          <li>400 g de haricots rouges (en boîte ou cuits)</li>
+           <li>1 c. à soupe de concentré de tomate</li> 
+           <li>1 c. à café de cumin moulu</li>
+            <li>1 c. à café de paprika</li> 
+            <li>1/2 c. à café de piment en poudre (ajustez selon votre goût)</li> 
+            <li>2 c. à soupe d'huile d'olive</li> 
+        <li>Sel et poivre au goût</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Faire revenir les aromates : Chauffez l'huile d'olive dans une grande casserole. Faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient translucides.</li> 
+        <li>Ajouter la viande : Incorporez la viande hachée et faites-la cuire jusqu'à ce qu'elle soit bien dorée.</li> 
+        <li>Incorporer les légumes : Ajoutez le poivron rouge, les tomates pelées, et le concentré de tomate. Mélangez bien.</li>
+         <li>Assaisonner : Ajoutez le cumin, le paprika, le piment, le sel et le poivre. Laissez mijoter à feu doux pendant 20 minutes.</li> 
+         <li>Ajouter les haricots : Incorporez les haricots rouges égouttés et poursuivez la cuisson pendant 10 minutes supplémentaires.</li>
+         <li>Servir : Servez chaud, accompagné de riz, de tortillas ou simplement avec une garniture de coriandre fraîche.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot-dog</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/Hot-dog-BD-576x728-c.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Hot-dog</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>4 pains à hot-dog</li> <li>4 saucisses de Francfort ou de Strasbourg</li>
+         <li>2 oignons émincés</li>
+          <li>2 c. à soupe de moutarde</li>
+          <li>2 c. à soupe de ketchup</li> 
+        <li>Optionnel : cornichons, fromage râpé ou relish</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préparer les saucisses : Faites chauffer les saucisses dans de l’eau frémissante pendant 5 à 7 minutes, sans les piquer pour qu’elles restent juteuses.</li>
+         <li>Préparer les oignons : Dans une poêle, faites revenir les oignons avec un peu d’huile jusqu’à ce qu’ils soient dorés.</li> 
+         <li>Chauffer les pains : Fendez les pains à hot-dog dans le sens de la longueur sans les séparer complètement. Passez-les quelques minutes au four ou sur un gril pour les réchauffer.</li>
+          <li>Assembler les hot-dogs : Tartinez l’intérieur des pains avec de la moutarde et/ou du ketchup. Ajoutez une saucisse chaude, puis garnissez avec les oignons et les ingrédients optionnels (fromage, cornichons, etc.).</li>
+         <li>Servir : Servez immédiatement, accompagné de frites ou d’une salade.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

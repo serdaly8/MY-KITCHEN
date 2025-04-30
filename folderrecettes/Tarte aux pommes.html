@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarte aux pommes - Allemagne</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/14.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Tarte aux pommes - Dessert Traditionnel Allemand</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>250 g de farine</li>
+        <li>125 g de beurre</li>
+        <li>80 g de sucre</li>
+        <li>1 œuf</li>
+        <li>4 pommes coupées en fines tranches</li>
+        <li>1 cuillère à café de cannelle</li>
+        <li>1 sachet de sucre vanillé</li>
+        <li>2 cuillères à soupe de jus de citron</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Mélanger la farine, le beurre, le sucre et l'œuf pour former une pâte.</li>
+        <li> Étaler la pâte dans un moule à tarte et réserver au frais.</li>
+        <li> Préchauffer le four à 180°C.</li>
+        <li> Mélanger les pommes avec le sucre vanillé, la cannelle et le jus de citron.</li>
+        <li> Disposer les tranches de pommes sur la pâte.</li>
+        <li> Cuire au four pendant 35 minutes.</li>
+        <li> Laisser refroidir et déguster !</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>roti de boeuf</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/roti de boeuf.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>roti de boeuf</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>1 kg de rôti de bœuf</li> <li>2 gousses d'ail</li> 
+        <li>2 c. à soupe d'huile d'olive</li>
+         <li>1 branche de thym</li>
+          <li>1 branche de romarin</li>
+           <li>Sel et poivre au goût</li> 
+        <li>Optionnel : légumes (pommes de terre, carottes, oignons) pour accompagner</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préchauffer le four : Réglez votre four à 220°C.</li>
+         <li>Préparer le rôti : Frottez le rôti avec l'ail, puis badigeonnez-le d'huile d'olive. Assaisonnez avec du sel, du poivre, du thym et du romarin.</li>
+          <li>Ajouter les légumes : Si vous souhaitez des légumes en accompagnement, disposez-les autour du rôti dans un plat allant au four.</li>
+           <li>Cuisson : Enfournez le rôti pendant 15 minutes pour le saisir. Réduisez ensuite la température à 200°C et poursuivez la cuisson pendant 20 à 30 minutes selon le degré de cuisson souhaité (saignant, à point ou bien cuit).</li>
+            <li>Repos : Sortez le rôti du four et enveloppez-le dans du papier aluminium. Laissez reposer 5 minutes pour que les jus se répartissent.</li> 
+        <li>Servir : Découpez le rôti en tranches fines et servez avec les légumes rôtis.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

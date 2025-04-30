@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brisket de boeuf </title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/brisket de boeuf.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>brisket de boeuf</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>1,5 kg de poitrine de bœuf (brisket)</li> 
+        <li>2 oignons émincés</li>
+         <li>4 gousses d'ail écrasées</li> 
+         <li>2 carottes coupées en rondelles</li> 
+         <li>500 ml de bouillon de bœuf</li> 
+         <li>250 ml de vin rouge (optionnel)</li>
+          <li>2 c. à soupe de concentré de tomate</li>
+           <li>2 c. à soupe d'huile d'olive</li> 
+           <li>1 c. à café de paprika</li> 
+           <li>1 c. à café de thym séché</li> 
+           <li>Sel et poivre au goût</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préchauffer le four : Réglez votre four à 150°C.</li> 
+        <li>Saisir la viande : Faites chauffer l'huile d'olive dans une cocotte. Saisissez le brisket de chaque côté jusqu'à ce qu'il soit bien doré. Retirez-le et réservez.</li>
+         <li>Préparer les légumes : Dans la même cocotte, faites revenir les oignons, l'ail et les carottes jusqu'à ce qu'ils soient légèrement dorés.</li>
+          <li>Ajouter les liquides : Incorporez le concentré de tomate, le bouillon de bœuf et le vin rouge. Mélangez bien.</li>
+           <li>Assaisonner : Ajoutez le paprika, le thym, le sel et le poivre. Remettez le brisket dans la cocotte, en veillant à ce qu'il soit bien immergé dans le liquide.</li> 
+           <li>Cuisson lente : Couvrez la cocotte et enfournez pendant 3 à 4 heures. Arrosez régulièrement la viande avec le jus de cuisson pour qu'elle reste tendre.</li>
+            <li>Servir : Une fois cuit, laissez reposer le brisket 10 minutes avant de le trancher. Servez avec des légumes rôtis ou une purée de pommes de terre.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

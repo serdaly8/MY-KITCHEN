@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brownies</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/brownies-scaled.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>brownies</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>200 g de chocolat noir</li>
+         <li>150 g de beurre</li>
+          <li>150 g de sucre</li> 
+        <li>3 œufs</li>
+         <li>100 g de farine</li>
+          <li>1 pincée de sel</li>
+         <li>Optionnel : noix, noisettes ou pépites de chocolat</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préchauffer le four : Réglez votre four à 180°C et préparez un moule carré en le tapissant de papier cuisson.</li>
+         <li>Faire fondre le chocolat et le beurre : Dans une casserole ou au bain-marie, faites fondre le chocolat noir avec le beurre jusqu'à obtenir un mélange lisse.</li>
+          <li>Mélanger les œufs et le sucre : Dans un bol, fouettez les œufs avec le sucre jusqu'à ce que le mélange blanchisse.</li> 
+          <li>Incorporer le chocolat fondu : Ajoutez le mélange chocolat-beurre aux œufs et sucre, puis mélangez bien.</li>
+           <li>Ajouter la farine et le sel : Tamisez la farine et incorporez-la au mélange. Ajoutez une pincée de sel et vos ingrédients optionnels (noix, noisettes, etc.).</li>
+            <li>Cuisson : Versez la pâte dans le moule et enfournez pendant 20 à 25 minutes. Les brownies doivent être légèrement fondants au centre.</li>
+         <li>Refroidir et servir : Laissez refroidir avant de découper en carrés. Servez avec une boule de glace ou simplement nature.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

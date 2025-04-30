@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pâtes à la Carbonara - Italie</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/11.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Pâtes à la Carbonara - Plat Traditionnel Italien</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>400 g de spaghetti</li>
+        <li>150 g de poitrine fumée (guanciale ou pancetta)</li>
+        <li>3 jaunes d'œufs</li>
+        <li>50 g de pecorino râpé</li>
+        <li>1 cuillère à café de poivre noir fraîchement moulu</li>
+        <li>Sel au goût</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Faire cuire les spaghetti dans une grande quantité d’eau salée jusqu’à ce qu’ils soient al dente.</li>
+        <li> Dans une poêle, faire revenir la poitrine fumée coupée en morceaux jusqu'à ce qu'elle soit dorée et croustillante.</li>
+        <li> Battre les jaunes d'œufs avec le pecorino râpé et le poivre.</li>
+        <li> Égoutter les pâtes en conservant un peu d’eau de cuisson.</li>
+        <li> Mélanger les pâtes chaudes avec la poitrine fumée, puis ajouter la préparation aux œufs en remuant rapidement.</li>
+        <li> Ajouter un peu d’eau de cuisson pour obtenir une sauce crémeuse.</li>
+        <li> Servir immédiatement avec du pecorino râpé et du poivre fraîchement moulu.</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

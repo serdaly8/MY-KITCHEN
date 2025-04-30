@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos mexicain </title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/latin-american-restaurants-marbella.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1> Tacos mexicain - Plat traditionnel du Mexique</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>8 tortillas de maïs</li>
+         <li>250 g de viande hachée (bœuf ou poulet)</li> 
+         <li>1 oignon blanc émincé</li> 
+         <li>2 tomates coupées en dés</li> 
+         <li>1/2 poivron vert coupé en petits morceaux</li> 
+         <li>1 boîte de haricots rouges</li>
+          <li>10 cl de coulis de tomate</li>
+           <li>1 c. à café de cumin en poudre</li> 
+           <li>Quelques gouttes de Tabasco (optionnel)</li> 
+           <li>Feuilles de laitue</li>
+            <li>Sel et poivre au goût</li>
+             <li>Huile d'olive</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préparer les légumes : Lavez et essorez les feuilles de laitue. Coupez les tomates et le poivron en petits dés.</li> 
+        <li>Faire revenir l'oignon : Dans une poêle, faites revenir l'oignon émincé avec un filet d'huile d'olive jusqu'à ce qu'il soit translucide.</li>
+         <li>Cuire la viande : Ajoutez la viande hachée dans la poêle, assaisonnez avec du sel, du poivre et du cumin, puis laissez cuire 5 minutes.</li>
+          <li>Incorporer les légumes : Ajoutez les tomates, le poivron et le coulis de tomate à la poêle. Mélangez bien et laissez mijoter 5 minutes supplémentaires.</li> 
+          <li>Ajouter les haricots rouges : Égouttez les haricots rouges et ajoutez-les dans la poêle 2 minutes avant la fin de la cuisson.</li> 
+          <li>Assembler les tacos : Garnissez chaque tortilla avec la préparation à la viande, quelques feuilles de laitue, et ajoutez quelques gouttes de Tabasco si vous aimez les saveurs épicées.</li> 
+        <li>Servir : Servez chaud, accompagné de guacamole ou de salsa pour encore plus de saveurs mexicaines.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bol-repas au saumon asiatique</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/bol-repas-saumon-asiatique-ogleman-savourer-bon.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Bol-repas au saumon asiatique – Asie (inspiré Japon/Corée)</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+       <li>1 pavé de saumon (150-200 g)</li> 
+       <li>2 cuillères à soupe de sauce soja</li>
+       <li>1 cuillère à soupe de miel ou sirop d’érable</li>
+        <li>1 cuillère à soupe d’huile de sésame</li>
+        <li>1 cuillère à soupe de vinaigre de riz</li>
+        <li>1 gousse d’ail émincée</li>
+        <li>1 cuillère à café de gingembre râpé</li>
+        <li>Riz cuit (blanc ou complet)</li>
+        <li>Légumes au choix : concombre, carotte râpée, edamame, chou rouge</li>
+        <li>Graines de sésame, oignons verts pour décorer</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Mélanger sauce soja, miel, huile de sésame, vinaigre, ail et gingembre. </li>
+        <li> Mariner le saumon 15 min dans cette sauce. </li>
+        <li> Cuire le saumon à la poêle ou au four jusqu’à ce qu’il soit doré. </li>
+        <li> Dans un bol, disposer du riz, des légumes frais, puis le saumon. </li>
+        <li> Napper avec la sauce restante, parsemer de graines de sésame et oignons verts. </li>
+        <li> Déguster tiède ou froid ! </li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

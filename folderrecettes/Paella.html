@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paella - Plat Espagnol</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/9.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Paella (Espagne) – Un plat à base de riz, agrémenté de fruits de mer, de poulet, de légumes et d'épices 🍽</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>300 g de riz rond</li>
+        <li>200 g de crevettes</li>
+        <li>200 g de poulet en morceaux</li>
+        <li>200 g de moules</li>
+        <li>2 tomates coupées en dés</li>
+        <li>1 poivron rouge coupé en lanières</li>
+        <li>2 gousses d’ail écrasées</li>
+        <li>1 oignon finement émincé</li>
+        <li>1 cuillère à café de paprika</li>
+        <li>1 cuillère à café de safran</li>
+        <li>500 ml de bouillon de volaille</li>
+        <li>Huile d’olive, sel et poivre</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Faire chauffer l’huile d’olive dans une poêle large et y faire revenir l’oignon.</li>
+        <li> Ajouter le poulet et le faire dorer.</li>
+        <li> Incorporer les tomates, l’ail et le poivron, laisser mijoter 5 min.</li>
+        <li> Ajouter le riz et mélanger avec les épices (paprika et safran).</li>
+        <li> Verser le bouillon, couvrir et cuire à feu doux pendant 15 min.</li>
+        <li> Ajouter les crevettes et les moules, laisser cuire encore 10 min.</li>
+        <li> Servir chaud avec un filet de citron.</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

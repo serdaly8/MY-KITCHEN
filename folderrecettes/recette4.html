@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empanadas</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/shutterstock_167996753.jpg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Empanadas - Plat savoureux du Brésil</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>2 rouleaux de pâte brisée ou feuilletée</li>
+         <li>500 g de viande hachée (bœuf ou poulet)</li>
+         <li>1 oignon émincé</li>
+          <li>2 gousses d'ail hachées</li>
+           <li>150 g de pulpe de tomate</li>
+            <li>1 c. à café de cumin moulu</li> 
+            <li>1 c. à café de paprika</li> 
+            <li>1 poignée de raisins secs (optionnel)</li>
+             <li>Olives vertes ou noires dénoyautées</li> 
+             <li>1 jaune d'œuf pour la dorure</li> 
+             <li>Sel et poivre au goût</li>
+         <li>Huile d'olive</li>
+
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li>Préparer la farce : Faites chauffer un filet d'huile d'olive dans une poêle. Faites revenir l'oignon et l'ail jusqu'à ce qu'ils soient translucides. Ajoutez la viande hachée et faites-la cuire jusqu'à ce qu'elle soit dorée.</li> <li>Assaisonner : Incorporez la pulpe de tomate, le cumin, le paprika, les raisins secs (si utilisés), et les olives. Salez, poivrez, et laissez mijoter 10 minutes. Laissez refroidir.</li> <li>Préparer les chaussons : Découpez des cercles dans la pâte à l'aide d'un emporte-pièce ou d'un bol. Déposez une cuillerée de farce au centre de chaque cercle. Repliez la pâte pour former un chausson et scellez les bords en les pressant avec une fourchette.</li> <li>Dorer et cuire : Badigeonnez les empanadas avec le jaune d'œuf battu. Disposez-les sur une plaque recouverte de papier cuisson et enfournez à 200°C pendant 20 minutes, jusqu'à ce qu'ils soient bien dorés.</li> <li>Servir : Dégustez chaud ou tiède, accompagné d'une salade ou d'une sauce chimichurri.</li>
+        
+      </ol>
+    </div>
+    
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>
