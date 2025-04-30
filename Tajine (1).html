@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tajine - Plat Marocain</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="7.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Tajine (Maroc) – Plat mijoté à base de viande, légumes et épices 🍽</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>500 g de viande d'agneau ou de poulet</li>
+        <li>2 oignons émincés</li>
+        <li>2 tomates coupées en dés</li>
+        <li>3 carottes coupées en morceaux</li>
+        <li>2 pommes de terre coupées en quartiers</li>
+        <li>100 g d'olives vertes</li>
+        <li>1 citron confit</li>
+        <li>1 cuillère à soupe de gingembre en poudre</li>
+        <li>1 cuillère à café de cumin</li>
+        <li>1 cuillère à café de curcuma</li>
+        <li>1 bâton de cannelle</li>
+        <li>500 ml de bouillon ou d'eau</li>
+        <li>Huile d'olive, sel et poivre</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ul>
+        <li>1. Faire chauffer l’huile d’olive dans un tajine ou une marmite.</li>
+        <li>2. Ajouter la viande et la faire dorer avec les épices.</li>
+        <li>3. Incorporer les oignons et les tomates, laisser mijoter 10 min.</li>
+        <li>4. Ajouter les légumes, les olives et le citron confit.</li>
+        <li>5. Verser le bouillon, couvrir et laisser mijoter 45 min.</li>
+        <li>6. Servir chaud avec du pain marocain ou de la semoule.</li>
+      </ul>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

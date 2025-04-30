@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baklava - Grèce</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/13.webp" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Baklava - Pâtisserie Grecque Traditionnelle</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>500 g de pâte filo</li>
+        <li>250 g de noix concassées (amandes, pistaches, noix)</li>
+        <li>150 g de beurre fondu</li>
+        <li>2 cuillères à soupe de sucre</li>
+        <li>1 cuillère à café de cannelle</li>
+        <li>200 g de miel</li>
+        <li>100 ml d’eau</li>
+        <li>1 cuillère à soupe de fleur d’oranger</li>
+        <li>Jus d’un demi-citron</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Préchauffer le four à 180°C.</li>
+        <li> Mélanger les noix concassées avec le sucre et la cannelle.</li>
+        <li> Beurrer un moule et étaler une première feuille de pâte filo.</li>
+        <li> Alterner couches de pâte filo et mélange de noix en badigeonnant de beurre.</li>
+        <li> Découper en petits carrés et enfourner pendant 30 minutes.</li>
+        <li> Pendant ce temps, faire chauffer le miel, l’eau, le citron et la fleur d’oranger.</li>
+        <li> Verser le sirop chaud sur le baklava dès la sortie du four.</li>
+        <li> Laisser refroidir et déguster !</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

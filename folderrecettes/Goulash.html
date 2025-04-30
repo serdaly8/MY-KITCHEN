@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goulash - Plat Hongrois</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/15.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Goulash - Plat Traditionnel Hongrois</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>600 g de bœuf (épaule ou jarret)</li>
+        <li>3 pommes de terre coupées en dés</li>
+        <li>2 oignons finement émincés</li>
+        <li>2 gousses d’ail écrasées</li>
+        <li>2 cuillères à soupe de paprika doux</li>
+        <li>1 cuillère à café de cumin</li>
+        <li>1 poivron rouge coupé en lanières</li>
+        <li>1 tomate mûre coupée en dés</li>
+        <li>500 ml de bouillon de bœuf</li>
+        <li>2 cuillères à soupe d’huile végétale</li>
+        <li>Sel et poivre au goût</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Faire chauffer l’huile dans une marmite et faire revenir les oignons jusqu’à ce qu’ils soient translucides.</li>
+        <li> Ajouter la viande et la saisir de tous les côtés.</li>
+        <li> Incorporer l’ail, le paprika, le cumin et bien mélanger.</li>
+        <li> Ajouter le poivron, la tomate et verser le bouillon.</li>
+        <li> Laisser mijoter à feu doux pendant 1h30.</li>
+        <li> Ajouter les pommes de terre et poursuivre la cuisson 30 minutes.</li>
+        <li> Rectifier l’assaisonnement et servir chaud.</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

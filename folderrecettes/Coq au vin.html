@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coq au Vin - Plat Français</title>
+  <style>
+    /* Fond blanc pour toute la page */
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Image centrée */
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 400px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: white;
+    }
+
+    /* Conteneur de la recette avec bande noire */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .ingredients, .instructions {
+      margin-bottom: 20px;
+    }
+
+    .ingredients ul, .instructions ul {
+      padding-left: 20px;
+    }
+
+    .ingredients li, .instructions li {
+      margin-bottom: 10px;
+    }
+
+    .instructions li {
+      font-size: 16px;
+    }
+
+    /* Bouton d'impression blanc */
+    .print-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .print-button:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="imgrecettes/12.jpeg" alt="Image Introuvable">
+
+  <div class="container">
+    <h1>Coq au Vin - Plat Traditionnel Français</h1>
+
+    <div class="ingredients">
+      <h2>Ingrédients :</h2>
+      <ul>
+        <li>1 coq coupé en morceaux</li>
+        <li>750 ml de vin rouge</li>
+        <li>200 g de champignons de Paris</li>
+        <li>2 oignons émincés</li>
+        <li>2 gousses d’ail écrasées</li>
+        <li>2 carottes coupées en rondelles</li>
+        <li>200 g de lardons</li>
+        <li>2 cuillères à soupe de farine</li>
+        <li>1 bouquet garni (thym, laurier, persil)</li>
+        <li>50 g de beurre</li>
+        <li>Huile d’olive, sel et poivre</li>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h2>Instructions :</h2>
+      <ol>
+        <li> Faire mariner le coq dans le vin rouge avec les aromates pendant 12 heures.</li>
+        <li> Égoutter et sécher les morceaux, puis les faire dorer dans du beurre.</li>
+        <li> Ajouter les oignons, les carottes et les lardons, puis saupoudrer de farine.</li>
+        <li> Verser le vin rouge et ajouter le bouquet garni.</li>
+        <li> Laisser mijoter à feu doux pendant 2 heures.</li>
+        <li> Ajouter les champignons et poursuivre la cuisson 15 minutes.</li>
+        <li> Servir chaud avec des pommes de terre ou des pâtes fraîches.</li>
+      </ol>
+    </div>
+
+    <button class="print-button" onclick="window.print()">Imprimer la recette</button>
+  </div>
+
+</body>
+</html>

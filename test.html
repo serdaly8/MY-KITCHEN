@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recettes de cuisine</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+  <style>
+    /* Déclaration des variables de style */
+    :root {
+      --c-dark: #0c0000;
+      --c-brank: #4e57d7;
+      --c-brank-light: #6970dd;
+      --c-brank-rgb: 78, 87, 212;
+      --c-body: #727272;
+      --font-base: "GeneralSans", sans-serif;
+      --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+      --transition: all 0.5s ease;
+    }
+
+    /* Style général du body */
+    body {
+      font-family: var(--font-base); /* Police générale */
+      line-height: 1.7; /* Espacement entre les lignes */
+      color: var(--c-body); /* Couleur du texte */
+      padding-top: 80px; /* Espacement en haut pour le navbar fixe */
+      margin: 0; /* Enlever les marges par défaut */
+    }
+
+    /* Définition du style des titres */
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: 600; /* Poids du texte */
+      color: var(--c-dark);
+    }
+
+    /* Style des liens */
+    a {
+      text-decoration: none; /* Enlever le soulignement des liens */
+      color: var(--c-brank); /* Couleur des liens */
+      transition: var(--transition); /* Transition pour un effet au survol */
+    }
+
+    /* Effet de survol sur les liens */
+    a:hover {
+      color: var(--c-brank-light); /* Change la couleur au survol */
+    }
+
+    /* Style des images */
+    img {
+      max-width: 100%; /* Assurer que l'image ne dépasse pas la largeur du conteneur */
+      height: auto; /* Conserver les proportions de l'image */
+    }
+
+    /* Section d'image de fond */
+    .hero-image {
+      background-image: url('hero.jpg'); /* Lien vers l'image de fond */
+      height: 60vh; /* Réduit la hauteur de l'image à 70% de la hauteur de la fenêtre */
+      background-size: cover; /* L'image couvre toute la zone */
+      background-position: center; /* L'image est centrée */
+      display: flex; /* Utilisation de flexbox pour l'alignement */
+      align-items: flex-end; /* Aligner le contenu au bas de la section */
+      justify-content: center; /* Centrer horizontalement le contenu */
+    }
+
+    /* Style des éléments du navbar */
+    .navbar-nav .nav-link {
+      padding: 0.75rem 1rem; /* Espacement des liens de navigation */
+      font-weight: 500; /* Poids du texte */
+    }
+
+    /* Effet de survol sur les liens du navbar */
+    .navbar-nav .nav-link:hover {
+      color: #f8f9fa; /* Change la couleur au survol */
+      background-color: rgba(255, 255, 255, 0.05); /* Fond au survol */
+      border-radius: 0.5rem; /* Bords arrondis au survol */
+    }
+
+    /* Style de la navbar */
+    .navbar.shadow-sm {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre pour la navbar */
+    }
+
+    /* Style du footer */
+    footer {
+      background-color: #000000; /* Fond noir pour le footer */
+      color: #ffffff; /* Texte blanc */
+      text-align: center; /* Centrer le texte */
+      padding: 40px 0; /* Espacement vertical */
+      font-size: 16px; /* Taille de la police */
+      font-weight: 500; /* Poids du texte */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🍽 My Kitchen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#Accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#À propos de">À propos de </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Nos Recettes">Nos Recettes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Notes et Avis">Notes et Avis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Equipe">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacts.html">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- IMAGE UNIQUE EN FOND -->
+  <section class="hero-image">
+    <!-- Message de bienvenue supprimé -->
+  </section>
+
+  <!-- MESSAGE SUPPLEMENTAIRE APRÈS L'IMAGE -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-uppercase fw-semibold display-1">🍽 Bienvenue sur My Kitchen</h1>
+        <h5>Nous vous proposons de délicieuses recettes à réaliser facilement chez vous</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 - Mon site de recettes.
+  </footer>
+
+  <!-- Lien vers le script de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hero {
+  background-image: url(hero.jpg); /* Lien vers l'image de fond */
+  height: 70vh; /* Réduit la hauteur de l'image à 70% de la hauteur de la fenêtre */
+  background-size: cover; /* L'image couvre toute la zone */
+  background-position: center; /* L'image est centrée */
+  display: flex; /* Utilisation de flexbox pour l'alignement */
+  align-items: flex-end; /* Aligner le contenu au bas de la section */
+  justify-content: center; /* Centrer horizontalement le contenu */
+}
