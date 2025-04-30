@@ -1,210 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Recettes de cuisine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .stars {
+            font-size: 24px; /* Agrandissement des étoiles */
+            color: #FFD700;  /* Couleur jaune */
+        }
+    </style>
+</head>
+<body>
 
-
-  </head>
-  <body>
-    <!--NAVBAR-->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand" href="#">🍽 My kitchen</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Nos Recettes.html">Nos recettes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="About.html">À propos de</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="team.html">Équipe</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="avis.html">Notes et avis</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacts</a>
-              </li>
-             
-              
-              
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">🍽 My Kitchen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Nos_Recettes.html">Nos recettes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Équipe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="avis.html">Notes et avis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-<!--NOTES ET AVIS-->
-<section id="NOTESETAVIS" class="section-padding bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-          <div class="section-title">
-              <h1 class="display-4 fw-semibold">Notes et Avis</h1>
-              <div class="line"></div>
-              <p> Découvrez ce que pensent nos utilisateurs : leurs avis sincères et leurs notes sur nos recettes vous guideront dans vos choix culinaires
-              </p>
+    <!-- SECTION NOTES ET AVIS -->
+    <section id="NOTESETAVIS" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Notes et Avis</h1>
+                        <div class="line"></div>
+                        <p>Découvrez ce que pensent nos utilisateurs : leurs avis sincères et leurs notes sur nos recettes vous guideront dans vos choix culinaires.</p>
 
+                        <div class="btn">
+                            <button onclick="ouvrirFormulaire()" class="btn btn-primary">Ajouter un commentaire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          </div>
+        <!-- FORMULAIRE DE COMMENTAIRE -->
+        <div id="form-container" style="display:none;" class="container mt-4">
+            <h2 class="text-center">Donnez votre avis</h2>
+            <div class="mb-3">
+                <input type="text" id="nom" class="form-control" placeholder="Entrez votre nom">
+            </div>
+            <div class="mb-3">
+                <textarea id="commentaire" class="form-control" placeholder="Décrivez votre expérience !"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Note :</label>
+                <select id="note" class="form-control">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+            </div>
+            <button onclick="saveComment()" class="btn btn-success">Soumettre</button>
+        </div>
+    </section>
 
+    <!-- AFFICHAGE DES COMMENTAIRES -->
+    <section class="container mt-4">
+        <h2 class="text-center">Commentaires des utilisateurs</h2>
 
-      </div>
+        <div id="commentaires-list"></div>
 
+        <!-- AVIS PRÉENREGISTRÉS -->
+        <div class="NOTESETAVIS bg-white p-4 mt-3">
+            <h5>Fatou Diarra</h5>
+            <p class="stars">★★★★★</p>
+            <p>"Ce site est une vraie mine d'or pour les amateurs de cuisine ! Les recettes sont bien expliquées et faciles à suivre, même pour un débutant comme moi. Merci pour ce super travail !"</p>
+        </div>
 
-  </div>
-  <div class="row gy-5 gx-6 ">
-    <div class="col-lg-4 col-sm-6"></div>
-<div class="NOTESETAVIS ">
-  <div class="NOTESETAVIS-head p-4  bg-white ">
-    <div class="text-warning">
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-    </div>
-    <p>"C’est devenu mon site de référence dès que je cherche une idée rapide ou originale pour cuisiner. J’adore la diversité des recettes proposées, et surtout les petites astuces pratiques qui font toute la différence. Ce que j’apprécie le plus, c’est que même en étant débutant, on peut suivre les étapes sans se sentir perdu." </p>
-  </div>
-  <div class="NOTESETAVIS-person mt-4 d-flex align-items-center">
-    <img class="rounded-circle" src="assets/images/icons8-marilyn-monroe-64.png" alt="P4">
-    <div class=" ms-3">
-      <h5>Anna MONTANA</h5>
-      <small>User</small>
-    </div>
-  </div>
-</div>
-  </div>
+        <div class="NOTESETAVIS bg-white p-4 mt-3">
+            <h5>Marc Dupont</h5>
+            <p class="stars">★★★★★</p>
+            <p>"J'adore la diversité des recettes proposées ! Il y a toujours une nouvelle idée à tester, et les astuces de préparation sont top. Un excellent site pour les passionnés de cuisine."</p>
+        </div>
 
-  <div class="row gy-5 gx-6 ">
-    <div class="col-lg-2 col-sm-4"></div>
-<div class="NOTESETAVIS ">
-  <div class="NOTESETAVIS-head  p-4  bg-white  ">
-    <div class="text-warning">
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-half-fill"></i>
-      <i class="ri-star-line"></i>
+        <div class="NOTESETAVIS bg-white p-4 mt-3">
+            <h5>Amina Souleymane</h5>
+            <p class="stars">★★★★☆</p>
+            <p>"Un site vraiment agréable et bien structuré. J'apprécie particulièrement la qualité des photos et la clarté des explications. C'est devenu mon site de référence pour cuisiner en famille."</p>
+        </div>
+    </section>
 
-    </div>
-    <p>"J’aimerais un peu plus de recettes végétariennes, mais sinon tout est top !" </p>
-  </div>
-  <div class="NOTESETAVIS-person mt-4 d-flex align-items-center">
-    <img class="rounded-circle" src="assets/images/icons8-avatar-50.png" alt="P4">
-    <div class=" ms-3">
-      <h5>Malika DIALLO</h5>
-      <small>User</small>
-    </div>
-  </div>
-</div>
-  </div>
+    <script>
+        function ouvrirFormulaire() {
+            document.getElementById("form-container").style.display = "block";
+        }
 
-  <div class="row gy-5 gx-6 ">
-    <div class="col-lg-2 col-sm-4"></div>
-<div class="NOTESETAVIS ">
-  <div class="NOTESETAVIS-head  p-4  bg-white  ">
-    <div class="text-warning">
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-    </div>
-    <p>"Un vrai coup de cœur ! Les idées de présentation sont magnifiques et impressionnent mes invités."
-    </p>
-  </div>
-  <div class="NOTESETAVIS-person mt-4 d-flex align-items-center">
-    <img class="rounded-circle" src="assets/images/icons8-elvis-presley-64.png" alt="P4">
-    <div class=" ms-3">
-      <h5>Papy Charlie</h5>
-      <small>User</small>
-    </div>
-  </div>
-</div>
-  </div>
+        function saveComment() {
+            let nom = document.getElementById("nom").value;
+            let commentaire = document.getElementById("commentaire").value;
+            let note = document.getElementById("note").value;
 
-  <div class="row gy-5 gx-6 ">
-    <div class="col-lg-2 col-sm-4"></div>
-<div class="NOTESETAVIS ">
-  <div class="NOTESETAVIS-head  p-4  bg-white ">
-    <div class="text-warning">
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-    </div>
-    <p>"J’adore ! Les recettes sont variées et ça m’a redonné envie de cuisiner tous les jours."
-    </p>
-  </div>
-  <div class="NOTESETAVIS-person mt-4 d-flex align-items-center">
-    <img class="rounded-circle" src="assets/images/icons8-frank-sinatra-64.png" alt="P4">
-    <div class=" ms-3">
-      <h5>Papa MOUNTOBO</h5>
-      <small>User</small>
-    </div>
-  </div>
-</div>
-  </div>
+            if (nom && commentaire) {
+                let avis = { nom: nom, commentaire: commentaire, note: `<span class="stars">${"★".repeat(note)}${"☆".repeat(5 - note)}</span>` };
+                let listeAvis = JSON.parse(localStorage.getItem("avis")) || [];
+                listeAvis.push(avis);
+                localStorage.setItem("avis", JSON.stringify(listeAvis));
 
-  <div class="row gy-5 gx-6 ">
-    <div class="col-lg-2 col-sm-4"></div>
-<div class="NOTESETAVIS ">
-  <div class="NOTESETAVIS-head    p-4  bg-white  ">
-    <div class="text-warning">
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-      <i class="ri-star-fill"></i>
-    </div>
-    <p>"Très bon site, les ingrédients sont simples à trouver et le goût est toujours au rendez-vous."
-    </p>
-  </div>
-  <div class="NOTESETAVIS-person mt-4 d-flex align-items-center">
-    <img class="rounded-circle" src="assets/images/icons8-taylor-swift-64.png" alt="P4">
-    <div class=" ms-3">
-      <h5>Demoiselle Beauty</h5>
-      <small>User</small>
-    </div>
-  </div>
-</div>
-  </div>
-  </div>
+                alert("Votre commentaire a été enregistré !");
+                afficherCommentaires();
+                document.getElementById("form-container").style.display = "none";
+            } else {
+                alert("Veuillez remplir tous les champs.");
+            }
+        }
 
-</section>
+        function afficherCommentaires() {
+            let listeAvis = JSON.parse(localStorage.getItem("avis")) || [];
+            let commentairesDiv = document.getElementById("commentaires-list");
+            commentairesDiv.innerHTML = "";
 
+            listeAvis.forEach(avis => {
+                let avisHtml = `
+                    <div class="NOTESETAVIS bg-white p-4 mt-3">
+                        <h5>${avis.nom}</h5>
+                        <p>${avis.note}</p>
+                        <p>${avis.commentaire}</p>
+                    </div>
+                `;
+                commentairesDiv.innerHTML += avisHtml;
+            });
+        }
 
-<div class="btn">
-  <a href="revious.html" button class="btn">Appuyer ici pour commanter</button></a>
-</div>
+        window.onload = afficherCommentaires;
+    </script>
 
-
-
-
-<footer>
-  &copy; 2025 - Mon site de recettes.
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <footer>&copy; 2025 - Mon site de recettes.</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
