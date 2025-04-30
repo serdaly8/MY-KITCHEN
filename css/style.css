@@ -1,0 +1,283 @@
+@import url(css/general-sans.css);
+
+:root{
+    --c-white:#fcfbfb;
+    --c-dark: #0c0000;
+    --c-brank:#4e57d7;
+    --c-brank-light: #6970dd;
+    --c-brank-rgd: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "GeneralSans" , sans-serif;
+    --box-shadow: 0px 15px 25px rgb(107, 107, 107);
+    --transition: all 0.5s ease;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 600;
+    color: var(--c-dark);
+}
+a{
+    text-decoration: none;
+    color: var(--c-brank);
+    transition: var(--transition);
+}
+a:hover{
+    color: var(--c-brank-light);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 15px; /* Augmenter le padding pour rendre la bande plus grande */
+    text-align: center;
+    font-size: 18px; /* Si tu veux aussi ajuster la taille du texte */
+    font-weight: 600;
+    margin-top: 40px;
+  }
+
+/*NAVBAR*/
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link{
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brank)
+}
+
+/*HERO*/
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0,0, 0.4)), url(hero.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*SECTION TITLE*/
+.section-title{
+    margin-bottom: 60px;
+}
+
+.section-title.line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brank);
+    margin: 16px auto 24px auto;
+
+}
+
+.section-title p{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ /*ICONBOX*/
+ .iconbox{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(56, 1, 62, 0.598);
+    color: var(--c-white);
+    font-size: 34px;
+    flex: none;
+ } 
+ 
+ /*NOTES ET AVIS*/
+ 
+
+ .NOTESETAVIS-head {
+    position: relative;
+ }
+
+ .NOTESETAVIS-head::after{
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -13px;
+    background-color: white;
+    transform: rotate(45deg);
+ }
+ .container-1 {
+    position: relative;
+    width: 400px;
+    background: beige;
+    padding: 28px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+    
+     .container-1 .post{
+        display: none;
+     }
+     .container-1 .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+     }
+     .container-1 .edit{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+     }
+    
+     .container-1 .start-widget input{
+      display: none;
+     }
+    
+     .start-widget label{
+    font-size: 40px ;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+    
+     }
+     input:not(:checked) ~ label:hover,
+     input:not(:checked) ~ label:hover ~ label {
+       color: #fd4;
+     }
+     input:checked ~ label{
+        color: #fd4;
+     }
+     input#rate-5:checked ~ label{
+        color: #fe7;
+        text-shadow: 0 0 20px #952;
+    }
+    
+    #rate-1:checked ~ form header:before{
+       content:"😠" ;
+    }
+    
+    #rate-2:checked ~ form header:before{
+       content:"😒" ;
+    }
+    
+    #rate-3:checked ~ form header:before{
+       content:"😄" ;
+    }
+    
+    #rate-4:checked ~ form header:before{
+       content:"😎" ;
+    }
+    
+    #rate-5:checked ~ form header:before{
+       content:"😍" ;
+    }
+    .container form{
+        display: none;
+    }
+    input:checked ~ form{
+        display: block;
+    }
+     form header{
+        width: 100%;
+        font-size: 25px;
+        color: #fe7;
+        font-weight: 500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2 ease;
+    }
+    form .box{
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    form .box textarea{
+        height: 60%;
+    width: 100%;
+    outline: none;
+    color: #111;
+    border: 1px solid #333;
+    background: aliceblue;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+    }
+    
+    form .textarea{
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #111;
+    border: 1px solid #333;
+    background: aliceblue;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+    
+    }
+    form .btn{
+        height: 45px;
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    form .btn button{
+        height: 100%;
+        width: 100%;
+        border: 1px solid #444;
+        outline: none;
+        background: #222;
+        color: #999;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    form .btn button:hover{
+    background: #1b1b1b;
+    }
+    
+ 
+
